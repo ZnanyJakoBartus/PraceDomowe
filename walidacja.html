@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="walidacja.js"></script>
+</head>
+<body>
+    
+    <form>
+        Uczeń:
+        <hr>
+        <table>
+            <tr>
+                <td>imię i nazwisko:</td>
+                <td><input type="text" name="imie"
+                id="imie" required=" ">*</td>
+            </tr>
+            <tr>
+                <td>e-mail:</td>
+                <td><input type="email" name="e-mail"
+                    id="e-mail"required>*</td>
+            </tr>
+            <tr>
+                <td>ocena:</td>
+                <td><input type="number" name="ocena" id="ocena" min="1" max="6"required>*</td>
+            </tr>
+            <tr>
+                <td>data:</td>
+                <td><input type="date" id="data" name="date" required >*</td>
+            </tr>
+        </table>
+        <input type="button" value="sprawdź" onclick="walidacja()">
+        <input type="reset" value="reset" >
+        <hr>
+        <p>Uwaga!<br>Pola oznaczone * są obowiązkowe!</p>
+    </form>
+</body>
+</html>
