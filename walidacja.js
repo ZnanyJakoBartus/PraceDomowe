@@ -6,7 +6,9 @@ function walidacja(){
     var Array = name.split(" ");
     console.log(Array.length);
     if(Array.length == 1 ){
-        alert("podaj imię i nazwisko")
+        alert("podaj imię i nazwisko. Samo "+ Array +" nie wystarczy ");
+        braki +="imie i nazwisko\n";
+        wpis = 0;
     }
     if(document.getElementById("imie").value == ""){
         braki +="imie\n"
