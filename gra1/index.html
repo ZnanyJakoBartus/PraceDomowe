@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gra</title>
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div id="nowa"><button type="button" onclick="zegar(); pytanie();znikanie()"> nowa gra </button></div>
+    <div id="wraperr">
+        <div id="timer"></div>
+     <br>
+        <div id="pytanie"></div>
+        <br>
+<form>
+    <input type="text"  id="odp"/>
+    <button  type="reset" onclick="sprawdz()">sprawdz</button>
+</form>
+    <div id="odpowiedz"></div>
+     <br>
+     wynik:  <span id="wynik"></span>
+    </div>
+
+</body>
+</html>
